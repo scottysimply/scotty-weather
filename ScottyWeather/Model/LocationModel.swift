@@ -8,7 +8,6 @@
 struct LocationModel {
     public var zipCode: String
     public var name: String
-    public var selected: Bool
     public var lat: Double
     public var long: Double
 }

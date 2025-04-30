@@ -8,9 +8,21 @@
 import SwiftUI
 
 struct CurrentWeatherView: View {
-    @State var weatherData: WeatherData?
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack() {
+            Text("Now")
+                .font(.system(size: 48, weight: .bold))
+            List() {
+                Text("Location")
+                Text("Temperature")
+                Text("Weather")
+                Text("Cloud Cover")
+                Text("Humidity")
+                Text("Wind Speed")
+            }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+                .padding(.leading, 12)
+                .font(.system(size: 24, weight: .medium))
+        }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
     }
 }
 

@@ -7,7 +7,7 @@
 
 import SwiftData
 
-@Model
-class PreferencesModel {
-    
+
+struct PreferencesModel {
+    var apiKey: String
 }
