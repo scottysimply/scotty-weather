@@ -5,9 +5,8 @@
 //  Created by PATTY, SCOTT on 4/28/25.
 //
 
-struct LocationModel {
-    public var zipCode: String
-    public var name: String
-    public var lat: Double
-    public var long: Double
+struct LocationModel: Decodable {
+    var zip, name: String
+    var lat, lon: Double
+    var country: String
 }
